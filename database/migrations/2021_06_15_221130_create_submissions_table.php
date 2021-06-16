@@ -18,12 +18,10 @@ class CreateSubmissionsTable extends Migration
             $table->string("desc");
             $table->date("depositDate");
             $table->date("expirationDate");
-            $table->unsignedBigInteger("user_id");
-            $table->foreign('user_id')->references('id')->on('enterprises');
+            $table->unsignedBigInteger("internship_id");
+            $table->foreign('internship_id')->references('id')->on('internship');
             $table->unsignedBigInteger("intern_id");
             $table->foreign('intern_id')->references('id')->on('interns');
-            $table->unsignedBigInteger("field_id");
-            $table->foreign('field_id')->references('id')->on('fields');
             $table->timestamps();
         });
     }
