@@ -11,7 +11,7 @@ class Intern extends Model
 
     protected $primaryKey = 'id';
     public $incrementing = false;
-    
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */

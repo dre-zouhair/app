@@ -15,4 +15,11 @@ class Field extends Model
     public function enterprise(){
         return $this->belongsTo(Enterprise::class);
     }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function internship(){
+        return $this->belongsTo(Internship::class);
+    }
 }

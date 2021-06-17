@@ -15,4 +15,12 @@ class Internship extends Model
     public function enterprise(){
         return $this->belongsTo(Enterprise::class);
     }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function fields(){
+        return $this->hasMany(Field::class);
+    }
+
 }
