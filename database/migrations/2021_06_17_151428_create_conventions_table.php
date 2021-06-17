@@ -17,6 +17,8 @@ class CreateConventionsTable extends Migration
             $table->id();
             $table->date("startDate");
             $table->date("endDate");
+            $table->string("report");
+            $table->string("mark");
             $table->unsignedBigInteger("submission_id");
             $table->foreign('submission_id')->references('id')->on('submissions');
             $table->timestamps();

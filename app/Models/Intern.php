@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Intern extends Model
 {
     use HasFactory;
+
+    protected $primaryKey = 'id';
+    public $incrementing = false;
+
 }

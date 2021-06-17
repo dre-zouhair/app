@@ -16,9 +16,7 @@ class CreateInternshipsTable extends Migration
         Schema::create('internships', function (Blueprint $table) {
             $table->id();
             $table->date("startDate");
-            $table->date("endDate");
-            $table->string("report");
-            $table->string("mark");
+            $table->string("duration");
             $table->unsignedBigInteger("enterprise_id");
             $table->foreign("enterprise_id")->references("id")->on("enterprises");
             $table->unsignedBigInteger("field_id");
