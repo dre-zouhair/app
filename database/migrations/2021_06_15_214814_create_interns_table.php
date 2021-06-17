@@ -14,13 +14,12 @@ class CreateInternsTable extends Migration
     public function up()
     {
         Schema::create('interns', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger("id")->unique();
             $table->string("registrationNumber");//Matricule
             $table->string("phone");
-            $table->string("placeOfBirth");
+            $table->string("address");
             $table->date("dateOfBirth");
-            $table->unsignedBigInteger("user_id")->nullable(false);
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('id')->references('id')->on('users');
             $table->timestamps();
         });
     }
