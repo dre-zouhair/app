@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Convention extends Model
 {
     use HasFactory;
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function submission(){
+        return $this->belongsTo(Submission::class);
+    }
 }

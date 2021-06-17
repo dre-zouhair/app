@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Training extends Model
 {
     use HasFactory;
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function intern(){
+        return $this->belongsTo(Intern::class);
+    }
+
 }
