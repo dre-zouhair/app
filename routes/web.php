@@ -24,19 +24,19 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     })->name('dashboard');
 
     Route::middleware(['intern'])->group(function () {
-        Route::get('/', function () {
+        Route::get('/intern', function () {
             //
         });
     });
 
     Route::middleware(['admin'])->group(function () {
-        Route::get('/', function () {
+        Route::get('/admin', function () {
             //
         });
     });
 
     Route::middleware(['enterprise'])->group(function () {
-        Route::get('/', function () {
+        Route::get('/enterprise', function () {
             //
         });
     });
