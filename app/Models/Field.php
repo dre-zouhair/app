@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Field extends Model
 {
     use HasFactory;
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function enterprise(){
+        return $this->belongsTo(Enterprise::class);
+    }
 }
