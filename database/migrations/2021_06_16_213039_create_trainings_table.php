@@ -18,7 +18,7 @@ class CreateTrainingsTable extends Migration
             $table->string("title");
             $table->string("details");
             $table->date("startDate");
-            $table->string("endDate");
+            $table->date("endDate");
             $table->unsignedBigInteger("intern_id");
             $table->foreign("intern_id")->references("id")->on("interns");
             $table->timestamps();
