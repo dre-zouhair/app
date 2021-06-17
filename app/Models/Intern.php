@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Intern extends Model
 {
@@ -13,22 +14,25 @@ class Intern extends Model
     public $incrementing = false;
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return HasMany
      */
-    public function submissions(){
+    public function submissions(): HasMany
+    {
         return $this->hasMany(Submission::class);
     }
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return HasMany
      */
-    public function trainings(){
+    public function trainings(): HasMany
+    {
         return $this->hasMany(Training::class);
     }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return HasMany
      */
-    public function experiences(){
+    public function experiences(): HasMany
+    {
         return $this->hasMany(Experience::class);
     }
 }

@@ -21,7 +21,7 @@ class Field extends Model
     /**
      * @return HasMany
      */
-    public function entreprisesFields(): HasMany
+    public function enterpriseFields(): HasMany
     {
         return $this->hasMany(EnterpriseField::class);
     }
@@ -31,8 +31,8 @@ class Field extends Model
      */
     public function ScopeEnterprises():array{
         $enterprises = array();
-        foreach ($this->entreprisesFields() as $value){
-            array_merge($enterprises,$value->entreprises());
+        foreach ($this->enterpriseFields() as $value){
+            array_merge($enterprises,$value->enterprises());
         }
         return $enterprises;
     }
