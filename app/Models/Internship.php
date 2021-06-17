@@ -4,23 +4,25 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMOne;
 
 class Internship extends Model
 {
     use HasFactory;
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return BelongsTo
      */
     public function enterprise(){
         return $this->belongsTo(Enterprise::class);
     }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return BelongsTo
      */
-    public function fields(){
-        return $this->hasMany(Field::class);
+    public function field(){
+        return $this->belongsTo(Field::class);
     }
 
 }

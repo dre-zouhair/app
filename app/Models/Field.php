@@ -4,22 +4,24 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Field extends Model
 {
     use HasFactory;
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return HasMany
      */
-    public function enterprise(){
-        return $this->belongsTo(Enterprise::class);
+    public function internships(){
+        return $this->hasMany(Internship::class);
     }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     * @return HasMany
      */
-    public function internship(){
-        return $this->belongsTo(Internship::class);
+    public function entreprises(){
+        return $this->hasMany(EnterpriseField::class);
     }
 }
