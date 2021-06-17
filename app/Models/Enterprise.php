@@ -13,16 +13,27 @@ class Enterprise extends Model
     /**
      * @return HasMany
      */
-    public function internships(){
+    public function internships(): HasMany
+    {
         return $this->hasMany(Internship::class);
     }
 
     /**
      * @return HasMany
      */
-    public function fields(){
-        return $this->hasMany(Field::class);
+    public function enterpriseFields():HasMany{
+        return $this->hasMany(EnterpriseField::class);
     }
 
+    /**
+     * @return array
+     */
+    public function ScopeFields():array{
+        $fields = array();
+        foreach ($this->enterpriseFields() as $value){
+            array_merge($fields,$value->fields());
+        }
+        return $fields;
+    }
 
 }

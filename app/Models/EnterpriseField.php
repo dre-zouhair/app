@@ -13,14 +13,16 @@ class EnterpriseField extends Model
     /**
      * @return HasMany
      */
-    public function entreprises(){
+    public function entreprises(): HasMany
+    {
         return $this->hasMany(Enterprise::class);
     }
 
     /**
      * @return HasMany
      */
-    public function fields(){
+    public function fields(): HasMany
+    {
         return $this->hasMany(Field::class);
     }
 
