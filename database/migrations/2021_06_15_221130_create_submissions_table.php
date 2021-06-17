@@ -17,7 +17,6 @@ class CreateSubmissionsTable extends Migration
             $table->id();
             $table->string("desc");
             $table->date("depositDate");
-            $table->date("expirationDate");
             $table->unsignedBigInteger("internship_id");
             $table->foreign('internship_id')->references('id')->on('internships');
             $table->unsignedBigInteger("intern_id");
