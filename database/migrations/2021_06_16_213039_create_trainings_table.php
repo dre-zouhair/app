@@ -16,7 +16,6 @@ class CreateTrainingsTable extends Migration
         Schema::create('trainings', function (Blueprint $table) {
             $table->id();
             $table->string("title");
-            $table->string("details");
             $table->date("startDate");
             $table->date("endDate");
             $table->unsignedBigInteger("intern_id");
