@@ -35,4 +35,12 @@ class Intern extends Model
     {
         return $this->hasMany(Experience::class);
     }
+
+    /**
+     * @return HasMany
+     */
+    public function skills(): HasMany
+    {
+        return $this->hasMany(Skill::class);
+    }
 }
