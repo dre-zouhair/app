@@ -39,7 +39,7 @@
                     @error('enterprise') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/5">
-                    <x-jet-input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" placeholder="Enter the desc" type="text" wire:model="desc"/>
+                    <textarea class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" placeholder="Enter the desc" type="text" wire:model="desc"></textarea>
                     @error('desc') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/5">

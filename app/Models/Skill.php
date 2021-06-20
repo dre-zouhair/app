@@ -10,6 +10,7 @@ class Skill extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
 
     /**
      * @return BelongsTo
