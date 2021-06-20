@@ -10,6 +10,7 @@ class Experience extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
     /**
      * @return BelongsTo
      */
