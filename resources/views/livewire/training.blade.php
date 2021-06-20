@@ -6,7 +6,7 @@
         </div>
         <div class="grid grid-rows-1">
             @if (session()->has('message'))
-                <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-green-500">
+                <div class="text-white px-6 py-4 border-0 relative mb-4 bg-green-500">
                     <span class="text-xl inline-block mr-5 align-middle">
                     <i class="fas fa-bell"></i>
                 </span>
@@ -19,7 +19,7 @@
                 </div>
             @endif
                 @if (session()->has('error'))
-                    <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-red-500">
+                    <div class="text-white px-6 py-4 border-0 relative mb-4 bg-red-500">
                     <span class="text-xl inline-block mr-5 align-middle">
                     <i class="fas fa-bell"></i>
                 </span>
@@ -35,47 +35,49 @@
         <div class="grid grid-rows-1">
             <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0">
                 <div class="w-full px-2 md:w-1/4">
-                    <x-jet-input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" placeholder="Enter the title" type="text" wire:model="title"/>
+                    <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" placeholder="Enter the title" type="text" wire:model="title"/>
                     @error('title') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/4">
-                    <x-jet-input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" placeholder="Enter the start date" type="date" wire:model="startDate"/>
+                    <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" placeholder="Enter the start date" type="date" wire:model="startDate"/>
                     @error('startDate') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/4">
-                    <x-jet-input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" placeholder="Enter the end date" type="date" wire:model="endDate"/>
+                    <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" placeholder="Enter the end date" type="date" wire:model="endDate"/>
                     @error('endDate') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/4">
                     @if($updateMode)
-                        <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded w-5/12"  wire:click.prevent="update()">update</button>
-                        <button class="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded w-5/12"  wire:click.prevent="cancelUpdate()">cancel</button>
+                        <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-5/12"  wire:click.prevent="update()">update</button>
+                        <button class="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent w-5/12"  wire:click.prevent="cancelUpdate()">cancel</button>
                     @else
-                        <button class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded w-full" wire:click.prevent="store()">Add</button>
+                        <button class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent w-full" wire:click.prevent="store()">Add</button>
                     @endif
                 </div>
             </div>
         </div>
     </div>
     <div>
+        @if(sizeof($trainings))
         <div class="grid grid-rows-1 m-4">
             <h3 class="text-center font-bold text-xl">{{__('Trainings List')}}</h3>
         </div>
+        @endif
         <div>
             @foreach($trainings as $key => $value)
                 <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0 m-2">
                     <div class="w-full px-2 md:w-1/4">
-                      <x-jet-input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" type="text" value="{{$value->title}}" />
+                      <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" type="text" value="{{$value->title}}" />
                     </div>
                     <div class="w-full px-2 md:w-1/4">
-                        <x-jet-input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" type="date" disabled="true" value="{{$value->startDate}}"/>
+                        <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" type="date" disabled="true" value="{{$value->startDate}}"/>
                     </div>
                     <div class="w-full px-2 md:w-1/4">
-                        <x-jet-input class="w-full h-10 px-3 text-base placeholder-gray-600 border rounded-lg focus:shadow-outline" type="date" disabled="true" value="{{$value->endDate}}"/>
+                        <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" type="date" disabled="true" value="{{$value->endDate}}"/>
                     </div>
                     <div class="w-full px-2 md:w-1/4">
-                        <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent rounded w-5/12" wire:click.prevent="edit({{$value->id}})">edit</button>
-                        <button class="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded w-5/12"  wire:click.prevent="delete({{$value->id}})">remove</button>
+                        <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-5/12" wire:click.prevent="edit({{$value->id}})">edit</button>
+                        <button class="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent w-5/12"  wire:click.prevent="delete({{$value->id}})">remove</button>
                     </div>
                 </div>
             @endforeach
