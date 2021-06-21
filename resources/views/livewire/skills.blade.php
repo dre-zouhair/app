@@ -1,5 +1,5 @@
-<div class="text-center">
-    <div>
+<div class="text-center p-8 mb-8 bg-white border-b border-gray-200">
+<div>
         <div class="grid grid-rows-1 mb-4">
             <h3 class="font-bold text-xl float-left "> {{__('Add a skill ')}}</h3>
         </div>
@@ -54,11 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="hidden sm:block">
-        <div class="py-8">
-            <div class="border-t border-gray-200"></div>
-        </div>
-    </div>
+
 </div>
 <script>
     function closeAlert(event){
