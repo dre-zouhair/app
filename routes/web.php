@@ -24,6 +24,9 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     })->name('dashboard');
 
     Route::middleware(['intern'])->group(function () {
+        Route::get('/user/profile/info', [\App\Http\Controllers\InternController::class, 'show'])
+            ->name('profile.info');
+
         Route::get('/intern', function () {
             //
         });
