@@ -11763,35 +11763,35 @@ select {
 }
 
 .rounded-sm {
-  border-radius: 0.125rem;
+  border-radius: 0;
 }
 
 .rounded {
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 
 .rounded-md {
-  border-radius: 0.375rem;
+  border-radius: 0;
 }
 
 .rounded-lg {
-  border-radius: 0.5rem;
+  border-radius: 0;
 }
 
 .rounded-xl {
-  border-radius: 0.75rem;
+  border-radius: 0;
 }
 
 .rounded-2xl {
-  border-radius: 1rem;
+  border-radius: 0;
 }
 
 .rounded-3xl {
-  border-radius: 1.5rem;
+  border-radius: 0;
 }
 
 .rounded-full {
-  border-radius: 9999px;
+  border-radius: 0;
 }
 
 .rounded-t-none {
@@ -11815,163 +11815,163 @@ select {
 }
 
 .rounded-t-sm {
-  border-top-left-radius: 0.125rem;
-  border-top-right-radius: 0.125rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .rounded-r-sm {
-  border-top-right-radius: 0.125rem;
-  border-bottom-right-radius: 0.125rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-b-sm {
-  border-bottom-right-radius: 0.125rem;
-  border-bottom-left-radius: 0.125rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-l-sm {
-  border-top-left-radius: 0.125rem;
-  border-bottom-left-radius: 0.125rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-t {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .rounded-r {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-b {
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-l {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-t-md {
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .rounded-r-md {
-  border-top-right-radius: 0.375rem;
-  border-bottom-right-radius: 0.375rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-b-md {
-  border-bottom-right-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-l-md {
-  border-top-left-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .rounded-r-lg {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-b-lg {
-  border-bottom-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-l-lg {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-t-xl {
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .rounded-r-xl {
-  border-top-right-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-b-xl {
-  border-bottom-right-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-l-xl {
-  border-top-left-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-t-2xl {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .rounded-r-2xl {
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-b-2xl {
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-l-2xl {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-t-3xl {
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .rounded-r-3xl {
-  border-top-right-radius: 1.5rem;
-  border-bottom-right-radius: 1.5rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-b-3xl {
-  border-bottom-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-l-3xl {
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-t-full {
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .rounded-r-full {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-b-full {
-  border-bottom-right-radius: 9999px;
-  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-l-full {
-  border-top-left-radius: 9999px;
-  border-bottom-left-radius: 9999px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-tl-none {
@@ -11991,131 +11991,131 @@ select {
 }
 
 .rounded-tl-sm {
-  border-top-left-radius: 0.125rem;
+  border-top-left-radius: 0;
 }
 
 .rounded-tr-sm {
-  border-top-right-radius: 0.125rem;
+  border-top-right-radius: 0;
 }
 
 .rounded-br-sm {
-  border-bottom-right-radius: 0.125rem;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-bl-sm {
-  border-bottom-left-radius: 0.125rem;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-tl {
-  border-top-left-radius: 0.25rem;
+  border-top-left-radius: 0;
 }
 
 .rounded-tr {
-  border-top-right-radius: 0.25rem;
+  border-top-right-radius: 0;
 }
 
 .rounded-br {
-  border-bottom-right-radius: 0.25rem;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-bl {
-  border-bottom-left-radius: 0.25rem;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-tl-md {
-  border-top-left-radius: 0.375rem;
+  border-top-left-radius: 0;
 }
 
 .rounded-tr-md {
-  border-top-right-radius: 0.375rem;
+  border-top-right-radius: 0;
 }
 
 .rounded-br-md {
-  border-bottom-right-radius: 0.375rem;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-bl-md {
-  border-bottom-left-radius: 0.375rem;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-tl-lg {
-  border-top-left-radius: 0.5rem;
+  border-top-left-radius: 0;
 }
 
 .rounded-tr-lg {
-  border-top-right-radius: 0.5rem;
+  border-top-right-radius: 0;
 }
 
 .rounded-br-lg {
-  border-bottom-right-radius: 0.5rem;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-bl-lg {
-  border-bottom-left-radius: 0.5rem;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-tl-xl {
-  border-top-left-radius: 0.75rem;
+  border-top-left-radius: 0;
 }
 
 .rounded-tr-xl {
-  border-top-right-radius: 0.75rem;
+  border-top-right-radius: 0;
 }
 
 .rounded-br-xl {
-  border-bottom-right-radius: 0.75rem;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-bl-xl {
-  border-bottom-left-radius: 0.75rem;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-tl-2xl {
-  border-top-left-radius: 1rem;
+  border-top-left-radius: 0;
 }
 
 .rounded-tr-2xl {
-  border-top-right-radius: 1rem;
+  border-top-right-radius: 0;
 }
 
 .rounded-br-2xl {
-  border-bottom-right-radius: 1rem;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-bl-2xl {
-  border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-tl-3xl {
-  border-top-left-radius: 1.5rem;
+  border-top-left-radius: 0;
 }
 
 .rounded-tr-3xl {
-  border-top-right-radius: 1.5rem;
+  border-top-right-radius: 0;
 }
 
 .rounded-br-3xl {
-  border-bottom-right-radius: 1.5rem;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-bl-3xl {
-  border-bottom-left-radius: 1.5rem;
+  border-bottom-left-radius: 0;
 }
 
 .rounded-tl-full {
-  border-top-left-radius: 9999px;
+  border-top-left-radius: 0;
 }
 
 .rounded-tr-full {
-  border-top-right-radius: 9999px;
+  border-top-right-radius: 0;
 }
 
 .rounded-br-full {
-  border-bottom-right-radius: 9999px;
+  border-bottom-right-radius: 0;
 }
 
 .rounded-bl-full {
-  border-bottom-left-radius: 9999px;
+  border-bottom-left-radius: 0;
 }
 
 .border-solid {
@@ -44423,35 +44423,35 @@ select {
   }
 
   .sm\:rounded-sm {
-    border-radius: 0.125rem;
+    border-radius: 0;
   }
 
   .sm\:rounded {
-    border-radius: 0.25rem;
+    border-radius: 0;
   }
 
   .sm\:rounded-md {
-    border-radius: 0.375rem;
+    border-radius: 0;
   }
 
   .sm\:rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0;
   }
 
   .sm\:rounded-xl {
-    border-radius: 0.75rem;
+    border-radius: 0;
   }
 
   .sm\:rounded-2xl {
-    border-radius: 1rem;
+    border-radius: 0;
   }
 
   .sm\:rounded-3xl {
-    border-radius: 1.5rem;
+    border-radius: 0;
   }
 
   .sm\:rounded-full {
-    border-radius: 9999px;
+    border-radius: 0;
   }
 
   .sm\:rounded-t-none {
@@ -44475,163 +44475,163 @@ select {
   }
 
   .sm\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-t-md {
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-r-md {
-    border-top-right-radius: 0.375rem;
-    border-bottom-right-radius: 0.375rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-b-md {
-    border-bottom-right-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-l-md {
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-t-xl {
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-r-xl {
-    border-top-right-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-b-xl {
-    border-bottom-right-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-l-xl {
-    border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-t-2xl {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-r-2xl {
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-b-2xl {
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-l-2xl {
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-t-3xl {
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-r-3xl {
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-b-3xl {
-    border-bottom-right-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-l-3xl {
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-tl-none {
@@ -44651,131 +44651,131 @@ select {
   }
 
   .sm\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
+    border-top-left-radius: 0;
   }
 
   .sm\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-tl {
-    border-top-left-radius: 0.25rem;
+    border-top-left-radius: 0;
   }
 
   .sm\:rounded-tr {
-    border-top-right-radius: 0.25rem;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-tl-md {
-    border-top-left-radius: 0.375rem;
+    border-top-left-radius: 0;
   }
 
   .sm\:rounded-tr-md {
-    border-top-right-radius: 0.375rem;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-br-md {
-    border-bottom-right-radius: 0.375rem;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-bl-md {
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
+    border-top-left-radius: 0;
   }
 
   .sm\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-tl-xl {
-    border-top-left-radius: 0.75rem;
+    border-top-left-radius: 0;
   }
 
   .sm\:rounded-tr-xl {
-    border-top-right-radius: 0.75rem;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-br-xl {
-    border-bottom-right-radius: 0.75rem;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-bl-xl {
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-tl-2xl {
-    border-top-left-radius: 1rem;
+    border-top-left-radius: 0;
   }
 
   .sm\:rounded-tr-2xl {
-    border-top-right-radius: 1rem;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-br-2xl {
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-bl-2xl {
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-tl-3xl {
-    border-top-left-radius: 1.5rem;
+    border-top-left-radius: 0;
   }
 
   .sm\:rounded-tr-3xl {
-    border-top-right-radius: 1.5rem;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-br-3xl {
-    border-bottom-right-radius: 1.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-bl-3xl {
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:rounded-tl-full {
-    border-top-left-radius: 9999px;
+    border-top-left-radius: 0;
   }
 
   .sm\:rounded-tr-full {
-    border-top-right-radius: 9999px;
+    border-top-right-radius: 0;
   }
 
   .sm\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
+    border-bottom-right-radius: 0;
   }
 
   .sm\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+    border-bottom-left-radius: 0;
   }
 
   .sm\:border-solid {
@@ -76913,35 +76913,35 @@ select {
   }
 
   .md\:rounded-sm {
-    border-radius: 0.125rem;
+    border-radius: 0;
   }
 
   .md\:rounded {
-    border-radius: 0.25rem;
+    border-radius: 0;
   }
 
   .md\:rounded-md {
-    border-radius: 0.375rem;
+    border-radius: 0;
   }
 
   .md\:rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0;
   }
 
   .md\:rounded-xl {
-    border-radius: 0.75rem;
+    border-radius: 0;
   }
 
   .md\:rounded-2xl {
-    border-radius: 1rem;
+    border-radius: 0;
   }
 
   .md\:rounded-3xl {
-    border-radius: 1.5rem;
+    border-radius: 0;
   }
 
   .md\:rounded-full {
-    border-radius: 9999px;
+    border-radius: 0;
   }
 
   .md\:rounded-t-none {
@@ -76965,163 +76965,163 @@ select {
   }
 
   .md\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-t-md {
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-r-md {
-    border-top-right-radius: 0.375rem;
-    border-bottom-right-radius: 0.375rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-b-md {
-    border-bottom-right-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-l-md {
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-t-xl {
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-r-xl {
-    border-top-right-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-b-xl {
-    border-bottom-right-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-l-xl {
-    border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-t-2xl {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-r-2xl {
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-b-2xl {
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-l-2xl {
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-t-3xl {
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-r-3xl {
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-b-3xl {
-    border-bottom-right-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-l-3xl {
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-tl-none {
@@ -77141,131 +77141,131 @@ select {
   }
 
   .md\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
+    border-top-left-radius: 0;
   }
 
   .md\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-tl {
-    border-top-left-radius: 0.25rem;
+    border-top-left-radius: 0;
   }
 
   .md\:rounded-tr {
-    border-top-right-radius: 0.25rem;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-tl-md {
-    border-top-left-radius: 0.375rem;
+    border-top-left-radius: 0;
   }
 
   .md\:rounded-tr-md {
-    border-top-right-radius: 0.375rem;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-br-md {
-    border-bottom-right-radius: 0.375rem;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-bl-md {
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
+    border-top-left-radius: 0;
   }
 
   .md\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-tl-xl {
-    border-top-left-radius: 0.75rem;
+    border-top-left-radius: 0;
   }
 
   .md\:rounded-tr-xl {
-    border-top-right-radius: 0.75rem;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-br-xl {
-    border-bottom-right-radius: 0.75rem;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-bl-xl {
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-tl-2xl {
-    border-top-left-radius: 1rem;
+    border-top-left-radius: 0;
   }
 
   .md\:rounded-tr-2xl {
-    border-top-right-radius: 1rem;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-br-2xl {
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-bl-2xl {
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-tl-3xl {
-    border-top-left-radius: 1.5rem;
+    border-top-left-radius: 0;
   }
 
   .md\:rounded-tr-3xl {
-    border-top-right-radius: 1.5rem;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-br-3xl {
-    border-bottom-right-radius: 1.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-bl-3xl {
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .md\:rounded-tl-full {
-    border-top-left-radius: 9999px;
+    border-top-left-radius: 0;
   }
 
   .md\:rounded-tr-full {
-    border-top-right-radius: 9999px;
+    border-top-right-radius: 0;
   }
 
   .md\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
+    border-bottom-right-radius: 0;
   }
 
   .md\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+    border-bottom-left-radius: 0;
   }
 
   .md\:border-solid {
@@ -109403,35 +109403,35 @@ select {
   }
 
   .lg\:rounded-sm {
-    border-radius: 0.125rem;
+    border-radius: 0;
   }
 
   .lg\:rounded {
-    border-radius: 0.25rem;
+    border-radius: 0;
   }
 
   .lg\:rounded-md {
-    border-radius: 0.375rem;
+    border-radius: 0;
   }
 
   .lg\:rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0;
   }
 
   .lg\:rounded-xl {
-    border-radius: 0.75rem;
+    border-radius: 0;
   }
 
   .lg\:rounded-2xl {
-    border-radius: 1rem;
+    border-radius: 0;
   }
 
   .lg\:rounded-3xl {
-    border-radius: 1.5rem;
+    border-radius: 0;
   }
 
   .lg\:rounded-full {
-    border-radius: 9999px;
+    border-radius: 0;
   }
 
   .lg\:rounded-t-none {
@@ -109455,163 +109455,163 @@ select {
   }
 
   .lg\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-t-md {
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-r-md {
-    border-top-right-radius: 0.375rem;
-    border-bottom-right-radius: 0.375rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-b-md {
-    border-bottom-right-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-l-md {
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-t-xl {
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-r-xl {
-    border-top-right-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-b-xl {
-    border-bottom-right-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-l-xl {
-    border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-t-2xl {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-r-2xl {
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-b-2xl {
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-l-2xl {
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-t-3xl {
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-r-3xl {
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-b-3xl {
-    border-bottom-right-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-l-3xl {
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-tl-none {
@@ -109631,131 +109631,131 @@ select {
   }
 
   .lg\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
+    border-top-left-radius: 0;
   }
 
   .lg\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-tl {
-    border-top-left-radius: 0.25rem;
+    border-top-left-radius: 0;
   }
 
   .lg\:rounded-tr {
-    border-top-right-radius: 0.25rem;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-tl-md {
-    border-top-left-radius: 0.375rem;
+    border-top-left-radius: 0;
   }
 
   .lg\:rounded-tr-md {
-    border-top-right-radius: 0.375rem;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-br-md {
-    border-bottom-right-radius: 0.375rem;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-bl-md {
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
+    border-top-left-radius: 0;
   }
 
   .lg\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-tl-xl {
-    border-top-left-radius: 0.75rem;
+    border-top-left-radius: 0;
   }
 
   .lg\:rounded-tr-xl {
-    border-top-right-radius: 0.75rem;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-br-xl {
-    border-bottom-right-radius: 0.75rem;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-bl-xl {
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-tl-2xl {
-    border-top-left-radius: 1rem;
+    border-top-left-radius: 0;
   }
 
   .lg\:rounded-tr-2xl {
-    border-top-right-radius: 1rem;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-br-2xl {
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-bl-2xl {
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-tl-3xl {
-    border-top-left-radius: 1.5rem;
+    border-top-left-radius: 0;
   }
 
   .lg\:rounded-tr-3xl {
-    border-top-right-radius: 1.5rem;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-br-3xl {
-    border-bottom-right-radius: 1.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-bl-3xl {
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:rounded-tl-full {
-    border-top-left-radius: 9999px;
+    border-top-left-radius: 0;
   }
 
   .lg\:rounded-tr-full {
-    border-top-right-radius: 9999px;
+    border-top-right-radius: 0;
   }
 
   .lg\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
+    border-bottom-right-radius: 0;
   }
 
   .lg\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+    border-bottom-left-radius: 0;
   }
 
   .lg\:border-solid {
@@ -141893,35 +141893,35 @@ select {
   }
 
   .xl\:rounded-sm {
-    border-radius: 0.125rem;
+    border-radius: 0;
   }
 
   .xl\:rounded {
-    border-radius: 0.25rem;
+    border-radius: 0;
   }
 
   .xl\:rounded-md {
-    border-radius: 0.375rem;
+    border-radius: 0;
   }
 
   .xl\:rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0;
   }
 
   .xl\:rounded-xl {
-    border-radius: 0.75rem;
+    border-radius: 0;
   }
 
   .xl\:rounded-2xl {
-    border-radius: 1rem;
+    border-radius: 0;
   }
 
   .xl\:rounded-3xl {
-    border-radius: 1.5rem;
+    border-radius: 0;
   }
 
   .xl\:rounded-full {
-    border-radius: 9999px;
+    border-radius: 0;
   }
 
   .xl\:rounded-t-none {
@@ -141945,163 +141945,163 @@ select {
   }
 
   .xl\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-t-md {
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-r-md {
-    border-top-right-radius: 0.375rem;
-    border-bottom-right-radius: 0.375rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-b-md {
-    border-bottom-right-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-l-md {
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-t-xl {
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-r-xl {
-    border-top-right-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-b-xl {
-    border-bottom-right-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-l-xl {
-    border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-t-2xl {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-r-2xl {
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-b-2xl {
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-l-2xl {
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-t-3xl {
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-r-3xl {
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-b-3xl {
-    border-bottom-right-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-l-3xl {
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-tl-none {
@@ -142121,131 +142121,131 @@ select {
   }
 
   .xl\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
+    border-top-left-radius: 0;
   }
 
   .xl\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-tl {
-    border-top-left-radius: 0.25rem;
+    border-top-left-radius: 0;
   }
 
   .xl\:rounded-tr {
-    border-top-right-radius: 0.25rem;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-tl-md {
-    border-top-left-radius: 0.375rem;
+    border-top-left-radius: 0;
   }
 
   .xl\:rounded-tr-md {
-    border-top-right-radius: 0.375rem;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-br-md {
-    border-bottom-right-radius: 0.375rem;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-bl-md {
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
+    border-top-left-radius: 0;
   }
 
   .xl\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-tl-xl {
-    border-top-left-radius: 0.75rem;
+    border-top-left-radius: 0;
   }
 
   .xl\:rounded-tr-xl {
-    border-top-right-radius: 0.75rem;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-br-xl {
-    border-bottom-right-radius: 0.75rem;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-bl-xl {
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-tl-2xl {
-    border-top-left-radius: 1rem;
+    border-top-left-radius: 0;
   }
 
   .xl\:rounded-tr-2xl {
-    border-top-right-radius: 1rem;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-br-2xl {
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-bl-2xl {
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-tl-3xl {
-    border-top-left-radius: 1.5rem;
+    border-top-left-radius: 0;
   }
 
   .xl\:rounded-tr-3xl {
-    border-top-right-radius: 1.5rem;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-br-3xl {
-    border-bottom-right-radius: 1.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-bl-3xl {
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:rounded-tl-full {
-    border-top-left-radius: 9999px;
+    border-top-left-radius: 0;
   }
 
   .xl\:rounded-tr-full {
-    border-top-right-radius: 9999px;
+    border-top-right-radius: 0;
   }
 
   .xl\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
+    border-bottom-right-radius: 0;
   }
 
   .xl\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+    border-bottom-left-radius: 0;
   }
 
   .xl\:border-solid {
@@ -174383,35 +174383,35 @@ select {
   }
 
   .\32xl\:rounded-sm {
-    border-radius: 0.125rem;
+    border-radius: 0;
   }
 
   .\32xl\:rounded {
-    border-radius: 0.25rem;
+    border-radius: 0;
   }
 
   .\32xl\:rounded-md {
-    border-radius: 0.375rem;
+    border-radius: 0;
   }
 
   .\32xl\:rounded-lg {
-    border-radius: 0.5rem;
+    border-radius: 0;
   }
 
   .\32xl\:rounded-xl {
-    border-radius: 0.75rem;
+    border-radius: 0;
   }
 
   .\32xl\:rounded-2xl {
-    border-radius: 1rem;
+    border-radius: 0;
   }
 
   .\32xl\:rounded-3xl {
-    border-radius: 1.5rem;
+    border-radius: 0;
   }
 
   .\32xl\:rounded-full {
-    border-radius: 9999px;
+    border-radius: 0;
   }
 
   .\32xl\:rounded-t-none {
@@ -174435,163 +174435,163 @@ select {
   }
 
   .\32xl\:rounded-t-sm {
-    border-top-left-radius: 0.125rem;
-    border-top-right-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-r-sm {
-    border-top-right-radius: 0.125rem;
-    border-bottom-right-radius: 0.125rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-b-sm {
-    border-bottom-right-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-l-sm {
-    border-top-left-radius: 0.125rem;
-    border-bottom-left-radius: 0.125rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-r {
-    border-top-right-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-t-md {
-    border-top-left-radius: 0.375rem;
-    border-top-right-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-r-md {
-    border-top-right-radius: 0.375rem;
-    border-bottom-right-radius: 0.375rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-b-md {
-    border-bottom-right-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-l-md {
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-t-lg {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-r-lg {
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-b-lg {
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-l-lg {
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-t-xl {
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-r-xl {
-    border-top-right-radius: 0.75rem;
-    border-bottom-right-radius: 0.75rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-b-xl {
-    border-bottom-right-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-l-xl {
-    border-top-left-radius: 0.75rem;
-    border-bottom-left-radius: 0.75rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-t-2xl {
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-r-2xl {
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-b-2xl {
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-l-2xl {
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-t-3xl {
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-r-3xl {
-    border-top-right-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-b-3xl {
-    border-bottom-right-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-l-3xl {
-    border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-t-full {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-r-full {
-    border-top-right-radius: 9999px;
-    border-bottom-right-radius: 9999px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-b-full {
-    border-bottom-right-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-l-full {
-    border-top-left-radius: 9999px;
-    border-bottom-left-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-tl-none {
@@ -174611,131 +174611,131 @@ select {
   }
 
   .\32xl\:rounded-tl-sm {
-    border-top-left-radius: 0.125rem;
+    border-top-left-radius: 0;
   }
 
   .\32xl\:rounded-tr-sm {
-    border-top-right-radius: 0.125rem;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-br-sm {
-    border-bottom-right-radius: 0.125rem;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-bl-sm {
-    border-bottom-left-radius: 0.125rem;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-tl {
-    border-top-left-radius: 0.25rem;
+    border-top-left-radius: 0;
   }
 
   .\32xl\:rounded-tr {
-    border-top-right-radius: 0.25rem;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-br {
-    border-bottom-right-radius: 0.25rem;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-bl {
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-tl-md {
-    border-top-left-radius: 0.375rem;
+    border-top-left-radius: 0;
   }
 
   .\32xl\:rounded-tr-md {
-    border-top-right-radius: 0.375rem;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-br-md {
-    border-bottom-right-radius: 0.375rem;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-bl-md {
-    border-bottom-left-radius: 0.375rem;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-tl-lg {
-    border-top-left-radius: 0.5rem;
+    border-top-left-radius: 0;
   }
 
   .\32xl\:rounded-tr-lg {
-    border-top-right-radius: 0.5rem;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-br-lg {
-    border-bottom-right-radius: 0.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-bl-lg {
-    border-bottom-left-radius: 0.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-tl-xl {
-    border-top-left-radius: 0.75rem;
+    border-top-left-radius: 0;
   }
 
   .\32xl\:rounded-tr-xl {
-    border-top-right-radius: 0.75rem;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-br-xl {
-    border-bottom-right-radius: 0.75rem;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-bl-xl {
-    border-bottom-left-radius: 0.75rem;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-tl-2xl {
-    border-top-left-radius: 1rem;
+    border-top-left-radius: 0;
   }
 
   .\32xl\:rounded-tr-2xl {
-    border-top-right-radius: 1rem;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-br-2xl {
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-bl-2xl {
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-tl-3xl {
-    border-top-left-radius: 1.5rem;
+    border-top-left-radius: 0;
   }
 
   .\32xl\:rounded-tr-3xl {
-    border-top-right-radius: 1.5rem;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-br-3xl {
-    border-bottom-right-radius: 1.5rem;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-bl-3xl {
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:rounded-tl-full {
-    border-top-left-radius: 9999px;
+    border-top-left-radius: 0;
   }
 
   .\32xl\:rounded-tr-full {
-    border-top-right-radius: 9999px;
+    border-top-right-radius: 0;
   }
 
   .\32xl\:rounded-br-full {
-    border-bottom-right-radius: 9999px;
+    border-bottom-right-radius: 0;
   }
 
   .\32xl\:rounded-bl-full {
-    border-bottom-left-radius: 9999px;
+    border-bottom-left-radius: 0;
   }
 
   .\32xl\:border-solid {
