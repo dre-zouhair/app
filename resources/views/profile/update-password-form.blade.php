@@ -27,13 +27,11 @@
         </div>
     </x-slot>
 
-    <x-slot name="actions">
-        <x-jet-action-message class="mr-3" on="saved">
-            {{ __('Saved.') }}
-        </x-jet-action-message>
-
-        <x-jet-button>
-            {{ __('Save') }}
-        </x-jet-button>
+        <div class="col-span-6 sm:col-span-4">
+            <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent" type="submit">
+                {{ __('Save') }}
+            </button>
+        </div>
     </x-slot>
+
 </x-jet-form-section>
