@@ -15,7 +15,6 @@ class CreateInternsTable extends Migration
     {
         Schema::create('interns', function (Blueprint $table) {
             $table->unsignedBigInteger("id")->unique();
-            $table->string("registrationNumber");//Matricule
             $table->string("phone");
             $table->string("address");
             $table->date("dateOfBirth");
