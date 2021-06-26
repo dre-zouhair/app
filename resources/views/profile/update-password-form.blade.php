@@ -14,7 +14,7 @@
             <x-jet-input-error for="current_password" class="mt-2" />
         </div>
 
-        <div class="col-span-6 sm:col-span-4">
+        <div class="col-span-8 sm:col-span-4">
             <x-jet-label for="password" value="{{ __('New Password') }}" />
             <x-jet-input id="password" type="password" class="mt-1 block w-full" wire:model.defer="state.password" autocomplete="new-password" />
             <x-jet-input-error for="password" class="mt-2" />
@@ -25,13 +25,14 @@
             <x-jet-input id="password_confirmation" type="password" class="mt-1 block w-full" wire:model.defer="state.password_confirmation" autocomplete="new-password" />
             <x-jet-input-error for="password_confirmation" class="mt-2" />
         </div>
+        <div class="col-span-6 sm:col-span-4 text-center">
+            <x-jet-input class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent" type="submit">
+                {{ __('Save') }}
+            </x-jet-input>
+        </div>
     </x-slot>
 
-        <div class="col-span-6 sm:col-span-4">
-            <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent" type="submit">
-                {{ __('Save') }}
-            </button>
-        </div>
+
     </x-slot>
 
 </x-jet-form-section>

@@ -13,6 +13,7 @@ class Intern extends Model
     protected $primaryKey = 'id';
     public $incrementing = false;
 
+    protected $guarded = [];
     /**
      * @return HasMany
      */
