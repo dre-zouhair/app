@@ -1,13 +1,31 @@
 <div class="p-8 mb-8 grid grid-cols-3">
     <div class="bg-white shadow-lg mx-2 p-2 col-span-1 border-b border-gray-200">
+
         @foreach($internships as $value)
-            <div class="box-border border-2 2xl:border-blue-100 p-2 mt-2" wire:click="internship({{$value->id}})">
-               <h1 class="text-4xl" >{{$value->title}} </h1>
-               <h1 class="text-blue-300 text-xl" > Enterprise :{{$value->enterprise()->getResults()->name}} </h1>
-                <p class="text-3xl"  > Start at : {{$value->startDate}}</p>
-                <p class="text-2xl"   >Duration :{{$value->duration}}</p>
+            <div class="box-border border-2 2xl:border-blue-100 p-2 mt-2" wire:click="internship({{$value['id']}})">
+               <h1 class="text-4xl" >{{$value['title']}} </h1>
+               <h1 class="text-blue-300 text-xl" > Enterprise :{{\App\Models\Enterprise::find($value['enterprise_id'])->name}} </h1>
+                <p class="text-3xl"  > Start at : {{$value['startDate']}}</p>
+                <p class="text-2xl"   >Duration :{{$value['duration']}}</p>
             </div>
         @endforeach
+            @if($index> 0)
+                @if(! sizeof($internships))
+                    <div>No data
+                @endif
+                <button class="mt-8 bg-transparent hover:bg-yellow-400 text-yellow-600 font-semibold hover:text-white py-2 px-4 border border-yellow-400 hover:border-transparent m-2 w-4/12" wire:click="paginate(-1)">
+                    Back
+                </button>
+                @if(! sizeof($internships))
+                            </div>
+                @endif
+            @endif
+            @if(sizeof($internships))
+            <button class="mt-8 bg-transparent hover:bg-green-400 text-green-600 font-semibold hover:text-white py-2 px-4 border border-green-400 hover:border-transparent m-2 w-4/12" wire:click="paginate(1)">
+                Next
+            </button>
+            @endif
+
     </div>
 @if($display)
     <div class=" bg-white bg-white shadow-lg mx-2 p-2 col-span-2 border-b border-gray-200">

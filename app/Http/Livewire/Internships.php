@@ -9,16 +9,26 @@ use Livewire\Component;
 
 class Internships extends Component
 {
-    public $internships,$internship,$desc;
-    public $display = false,$modal= false;
+    public $internshipsList,$index=0,$internships,$internship,$desc;
+    public $display = false,$modal= false,$paginate=false;
+
     public function render()
     {
         try{
-            $this->internships = Internship::where('expirationDate' ,'>', \Carbon\Carbon::now())->simplePaginate(5)->items();
+            $this->internshipsList = Internship::where('expirationDate' ,'>', \Carbon\Carbon::now())->get()->sortDesc();
+            $data = $this->paginate? $this->internships = array_slice($this->internshipsList->toArray(), $this->index , 5) : array_slice($this->internshipsList->toArray(), 0, 5);
+            if(sizeof($data)){
+                $this->internships = $data;
+            }
             return view('livewire.internships');
         }catch (\Exception $e){
 
         }
+    }
+
+    public function paginate($sign){
+        $this->index += $sign * 5;
+        $this->paginate = true;
     }
 
     public function internship($id){

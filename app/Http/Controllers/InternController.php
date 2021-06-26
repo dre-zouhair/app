@@ -17,7 +17,7 @@ class InternController extends Controller
 
     public function accepted(Request $request)
     {
-        return view('livewire.accepted', [
+        return view('intern.accepted', [
             'request' => $request,
             'user' => $request->user(),
         ]);
@@ -25,7 +25,7 @@ class InternController extends Controller
 
     public function submissions(Request $request)
     {
-        return view('livewire.submissions', [
+        return view('intern.submission', [
             'request' => $request,
             'user' => $request->user(),
         ]);
