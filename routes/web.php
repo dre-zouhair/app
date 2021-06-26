@@ -27,6 +27,13 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::get('/user/profile/info', [\App\Http\Controllers\InternController::class, 'show'])
             ->name('profile.info');
 
+        Route::get('/user/profile/submissions', [\App\Http\Controllers\InternController::class, 'submissions'])
+            ->name('submissions');
+
+        Route::get('/user/profile/accepted', [\App\Http\Controllers\InternController::class, 'accepted'])
+            ->name('accepted');
+
+
         Route::get('/intern', function () {
             //
         });

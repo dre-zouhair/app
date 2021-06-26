@@ -6,15 +6,26 @@ use Illuminate\Http\Request;
 
 class InternController extends Controller
 {
-    /**
-     * Show the user profile screen.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\View\View
-     */
+
     public function show(Request $request)
     {
         return view('profile.info', [
+            'request' => $request,
+            'user' => $request->user(),
+        ]);
+    }
+
+    public function accepted(Request $request)
+    {
+        return view('livewire.accepted', [
+            'request' => $request,
+            'user' => $request->user(),
+        ]);
+    }
+
+    public function submissions(Request $request)
+    {
+        return view('livewire.submissions', [
             'request' => $request,
             'user' => $request->user(),
         ]);
