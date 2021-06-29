@@ -1,5 +1,4 @@
-@if($internshipsList->count())
-    <div class="p-8 mb-8 grid grid-cols-3">
+ <div class="p-8 mb-8 grid grid-cols-3">
         <div class="bg-white shadow-lg mx-2 p-2 col-span-1 border-b border-gray-200">
             @foreach($internships as $value)
                 <div class="box-border border-2 2xl:border-blue-100 p-2 mt-2" wire:click="internship({{$value['id']}})">
@@ -187,15 +186,4 @@
         @endif
 
     </div>
-@else
-    <div class="bg-white shadow-lg mx-2 p-2 w-full border-b border-gray-200">
-        <div class="text-black px-6 p-4 border-0  relative m-4 bg-white">
-                    <span class="text-xl inline-block mr-5 align-middle">
-                    <i class="fas fa-bell"></i>
-                </span>
-            Try adding some offers !
-            <br>
-        </div>
-    </div>
-@endif
 
