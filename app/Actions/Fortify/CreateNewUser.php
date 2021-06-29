@@ -4,6 +4,7 @@ namespace App\Actions\Fortify;
 
 use App\Models\Intern;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
@@ -29,8 +30,15 @@ class CreateNewUser implements CreatesNewUsers
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
                 'password' => $this->passwordRules(),
             ])->validate();
+           $user = new User();
+           $user->user_type = "admin";
+           $user->name = $input['name'];
+           $user->lastName = $input['lastName'];
+           $user->email = $input['email'];
+           $user->password = Hash::make($input['password']);
+           $user->save();
 
-           $user =  User::create([
+           $user2 =  User::create([
                 'name' => $input['name'],
                 'lastName' => $input['lastName'],
                 'email' => $input['email'],
@@ -50,13 +58,20 @@ class CreateNewUser implements CreatesNewUsers
             ])->validate();
 
             try{
-                $user =  User::create([
+                $user2 =  User::create([
                     'name' => $input['name'],
                     'lastName' => $input['lastName'],
                     'email' => $input['email'],
                     'user_type' => "intern",
                     'password' => Hash::make($input['password']),
                 ]);
+                $user = new User();
+                $user->user_type = "intern";
+                $user->name = $input['name'];
+                $user->lastName = $input['lastName'];
+                $user->email = $input['email'];
+                $user->password = Hash::make($input['password']);
+                $user->save();
 
                 $intern = Intern::create([
                     'id' => $user->id,
