@@ -34,13 +34,14 @@ class Skills extends Component
     public function store():void
     {
         $validatedDate = $this->validate();
+        $label = $this->label;
         try{
             $skill = SkillModel::create([
                 'intern_id' => Auth::user()->getAuthIdentifier(),
                 'label' => $this->label,
             ]);
             $this->resetInputFields();
-            session()->flash('message', 'skill Has Been Created Successfully.');
+            session()->flash('message', $label.' has been created successfully.');
         }catch (Exception $e){
             session()->flash('error', 'Something went wrong try later');
         }
@@ -62,7 +63,7 @@ class Skills extends Component
     public function update()
     {
         $validatedDate = $this->validate();
-
+        $label = $this->label;
         try {
             if ($this->selected_id) {
                 $skill = SkillModel::all()->find($this->selected_id);
@@ -71,7 +72,7 @@ class Skills extends Component
                 ]);
                 $this->resetInputFields();
                 $this->updateMode = false;
-                session()->flash('message', 'Contact Has Been Created Successfully.');
+                session()->flash('message', $label.' Has Been deleted Successfully.');
             }
         }catch (\Exception $e){
             session()->flash('error', 'Something went wrong try later');
@@ -81,9 +82,10 @@ class Skills extends Component
 
     public function delete($id){
         try{
+            $label = SkillModel::find($id)->label;
             SkillModel::destroy($id);
             $this->render();
-            session()->flash('message', 'Contact Has Been deleted Successfully.');
+            session()->flash('message', $label.' has been deleted Successfully.');
         }catch (\Exception $e){
             session()->flash('error', 'Something went wrong try later');
         }

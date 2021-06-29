@@ -9,7 +9,7 @@ use Livewire\Component;
 
 class Internships extends Component
 {
-    public $internshipsList,$index=0,$internships,$internship,$desc;
+    public $internshipsList,$index=0,$internships = [],$internship,$desc,$lines;
     public $display = false,$modal= false,$paginate=false;
 
     public function render()
@@ -34,6 +34,8 @@ class Internships extends Component
     public function internship($id){
         try{
             $this->internship = Internship::find($id);
+
+            $this->lines = explode("\n", $this->internship->details);
             $this->display = true;
         }catch (\Exception $e){
 

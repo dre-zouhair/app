@@ -28,13 +28,22 @@
         @endif
     </div>
     <div class="bg-white shadow-lg mx-2 p-2 col-span-1 border-b border-gray-200">
-
+        <h1 class="text-center text-4xl text-blue-600 my-8"><b>My pending submissions</b></h1>
         @foreach($submissions as $value)
-            <div class="box-border border-2 2xl:border-blue-100 p-2 mt-2" >
-                <h1 class="text-4xl" >{{$value->id}} </h1>
-                <h1>{{$value->internship()->getResults()->title}}</h1>
-                <h1>{{$value->internship()->getResults()->enterprise()->getResults()->name}}</h1>
-                <h1 class="text-4xl" >{{$value->desc}} </h1>
+            <div class="box-border border-2 2xl:border-blue-100 p-2 mt-2 p-4" >
+                <h2>
+                    <span class="text-4xl"> {{$value->internship()->getResults()->title}} </span>
+                    <span class="float-right text-2xl text-blue-400 mt-2">
+                       {{$value->internship()->getResults()->enterprise()->getResults()->name}}
+                    </span>
+                </h2>
+                <p class="text-xl text-green-400 ml-4" >
+                    Submitted at {{$value->created_at}}
+                </p>
+
+                <p lass="text-gray-700 ml-4" >
+                    {{$value->desc}}
+                </p>
             </div>
         @endforeach
             @if($submissions->count() == 0 )

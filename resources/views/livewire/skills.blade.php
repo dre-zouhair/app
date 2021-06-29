@@ -1,7 +1,7 @@
 <div class="text-center p-8 mb-8 bg-white border-b border-gray-200">
     <div>
         <div class="grid grid-rows-1 mb-4">
-            <h3 class="font-bold text-xl float-left "> {{__('Add a skill ')}}</h3>
+            <h3 class="font-bold text-xl float-left "> {{__('Skills')}}</h3>
         </div>
         <div class="grid grid-rows-1">
             @if (session()->has('message'))
@@ -37,7 +37,7 @@
         <div class="flex flex-col space-y-2">
             <div class="flex space-x-2">
                 <div>
-                    <input class="h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" placeholder="Enter the title" type="text" wire:model="label"/>
+                    <input class="h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" placeholder="Enter the skill name" type="text" wire:model="label"/>
                     <button class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 outline-white" wire:click.prevent="store()">Add</button>
                 </div>
 

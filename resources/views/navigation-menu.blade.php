@@ -10,30 +10,59 @@
                     </a>
                 </div>
 
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-jet-nav-link>
-                </div>
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('profile.info') }}" :active="request()->routeIs('profile.info')">
-                        {{ __('Profile Info') }}
-                    </x-jet-nav-link>
-                </div>
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('submissions') }}" :active="request()->routeIs('submissions')">
-                        {{ __('submissions') }}
-                    </x-jet-nav-link>
-                </div>
+                @if(Auth::user()->user_type == 'intern')
+                    <!-- Navigation Links -->
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                            <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                                {{ __('Dashboard') }}
+                            </x-jet-nav-link>
+                        </div>
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-jet-nav-link href="{{ route('profile.info') }}" :active="request()->routeIs('profile.info')">
+                            {{ __('Profile Info') }}
+                        </x-jet-nav-link>
+                    </div>
 
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('accepted') }}" :active="request()->routeIs('accepted')">
-                        {{ __('accepted Submission') }}
-                    </x-jet-nav-link>
-                </div>
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-jet-nav-link href="{{ route('submissions') }}" :active="request()->routeIs('submissions')">
+                            {{ __('submissions') }}
+                        </x-jet-nav-link>
+                    </div>
+
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-jet-nav-link href="{{ route('acceptedSubmissions') }}" :active="request()->routeIs('acceptedSubmissions')">
+                            {{ __('accepted Submission') }}
+                        </x-jet-nav-link>
+                    </div>
+                  @endif
+
+                @if(Auth::user()->user_type == 'admin')
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-jet-nav-link href="{{ route('ListEnterprises') }}" :active="request()->routeIs('ListEnterprises')">
+                            {{ __(' ListEnterprises') }}
+                        </x-jet-nav-link>
+                    </div>
+                @endif
+
+                @if(Auth::user()->user_type == 'enterpriseRep')
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-jet-nav-link href="{{ route('ListInternships') }}" :active="request()->routeIs('ListInternships')">
+                            {{ __(' ListInternships') }}
+                        </x-jet-nav-link>
+                    </div>
+
+                    <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                        <x-jet-nav-link href="{{ route('ListSubmissions') }}" :active="request()->routeIs('ListSubmissions')">
+                            {{ __(' ListSubmissions') }}
+                        </x-jet-nav-link>
+                    </div>
+
+                @endif
+
+
+
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -71,14 +100,10 @@
                                 {{ __('Profile') }}
                             </x-jet-dropdown-link>
 
+                            @if(Auth::user()->user_type == 'intern')
                             <x-jet-dropdown-link href="{{ route('profile.info') }}">
                                 {{ __('profile Info') }}
                             </x-jet-dropdown-link>
-
-                            @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                                <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
-                                    {{ __('API Tokens') }}
-                                </x-jet-dropdown-link>
                             @endif
 
                             <div class="border-t border-gray-100"></div>
@@ -139,11 +164,47 @@
                     {{ __('Profile') }}
                 </x-jet-responsive-nav-link>
 
-                @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                    <x-jet-responsive-nav-link href="{{ route('api-tokens.index') }}" :active="request()->routeIs('api-tokens.index')">
-                        {{ __('API Tokens') }}
+            @if(Auth::user()->user_type == 'intern')
+                <!-- Navigation Links -->
+
+                    <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        {{ __('Home') }}
                     </x-jet-responsive-nav-link>
+
+                    <x-jet-responsive-nav-link href="{{ route('submissions') }}" :active="request()->routeIs('submissions')">
+                        {{ __('submissions') }}
+                    </x-jet-responsive-nav-link>
+
+
+                      <x-jet-responsive-nav-link href="{{ route('acceptedSubmissions') }}" :active="request()->routeIs('acceptedSubmissions')">
+                        {{ __('acceptedSubmissions') }}
+                    </x-jet-responsive-nav-link>
+
+                     <x-jet-responsive-nav-link href="{{ route('profile.info') }}" :active="request()->routeIs('profile.info')">
+                        {{ __('profile.info') }}
+                    </x-jet-responsive-nav-link>
+            @endif
+
+                @if(Auth::user()->user_type == 'admin')
+                    <x-jet-responsive-nav-link href="{{ route('ListEnterprises') }}" :active="request()->routeIs('ListEnterprises')">
+                        {{ __('List Enterprises') }}
+                    </x-jet-responsive-nav-link>
+
                 @endif
+
+                @if(Auth::user()->user_type == 'enterpriseRep')
+
+                        <x-jet-responsive-nav-link  href="{{ route('ListInternships') }}" :active="request()->routeIs('ListInternships')">
+                            {{ __(' ListInternships') }}
+                        </x-jet-responsive-nav-link >
+
+                    <x-jet-responsive-nav-link href="{{ route('ListSubmissions') }}" :active="request()->routeIs('ListSubmissions')">
+                        {{ __('List ListSubmissions') }}
+                    </x-jet-responsive-nav-link>
+
+
+                @endif
+
 
                 <!-- Authentication -->
                 <form method="POST" action="{{ route('logout') }}">

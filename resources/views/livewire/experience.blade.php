@@ -2,7 +2,7 @@
 <div>
         <div class="grid grid-rows-1 mb-4">
             <h3 class="font-bold text-xl float-left "> @if($updateMode) {{ __('Update')}} @else {{  __('Add')}} @endif
-                {{__('a Experience')}}</h3>
+                {{__('an Experience')}}</h3>
         </div>
         <div class="grid grid-rows-1">
             @if (session()->has('message'))
@@ -35,22 +35,26 @@
         <div class="grid grid-rows-1">
             <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0">
                 <div class="w-full px-2 md:w-1/5">
+                    <x-jet-label for="phone" value="{{ __('Enterprise') }}" />
                     <input class="w-full h-10 px-3 text-base placeholder-gray-600 border  focus:shadow-outline" placeholder="Enter the enterprse" type="text" wire:model="enterprise"/>
                     @error('enterprise') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/5">
+                    <x-jet-label for="phone" value="{{ __('Description') }}" />
                     <textarea class="w-full h-10 px-3 text-base placeholder-gray-600 border  focus:shadow-outline" placeholder="Enter the desc" type="text" wire:model="desc"></textarea>
                     @error('desc') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/5">
+                    <x-jet-label for="phone" value="{{ __('Start Date') }}" />
                     <input class="w-full h-10 px-3 text-base placeholder-gray-600 border  focus:shadow-outline" placeholder="Enter the start date" type="date" wire:model="startDate"/>
                     @error('startDate') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/5">
+                    <x-jet-label for="phone" value="{{ __('End Date') }}" />
                     <input class="w-full h-10 px-3 text-base placeholder-gray-600 border  focus:shadow-outline" placeholder="Enter the end date" type="date" wire:model="endDate"/>
                     @error('endDate') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
-                <div class="w-full px-2 md:w-1/5">
+                <div class="w-full px-2  pt-4 md:w-1/5">
                     @if($updateMode)
                         <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-5/12"  wire:click.prevent="update()">update</button>
                         <button class="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent w-5/12"  wire:click.prevent="cancelUpdate()">cancel</button>
@@ -64,10 +68,31 @@
     <div>
         @if(sizeof($experiences))
         <div class="grid grid-rows-1 m-4">
-            <h3 class="text-center font-bold text-xl">{{__('Experiences List')}}</h3>
+            <h3 class="text-center font-bold text-xl">{{__('Experiences\'s List')}}</h3>
         </div>
         @endif
+
         <div>
+            <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0 m-2">
+                <div class="w-full px-2 md:w-1/5">
+                    <x-jet-label for="phone" value="{{ __('Enterprise') }}" />
+
+                </div>
+                <div class="w-full px-2 md:w-1/5">
+                    <x-jet-label for="phone" value="{{ __('Description') }}" />
+
+                </div>
+                <div class="w-full px-2 md:w-1/5">
+                    <x-jet-label for="phone" value="{{ __('Start Date') }}" />
+
+                </div>
+                <div class="w-full px-2 md:w-1/5">
+                    <x-jet-label for="phone" value="{{ __('End Date') }}" />
+
+                </div>
+                <div class="w-full px-2 md:w-1/5">
+                </div>
+            </div>
             @foreach($experiences as $key => $value)
                 <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0 m-2">
                     <div class="w-full px-2 md:w-1/5">

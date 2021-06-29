@@ -35,19 +35,24 @@
         <div class="grid grid-rows-1">
             <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0">
                 <div class="w-full px-2 md:w-1/4">
+                    <x-jet-label for="phone" value="{{ __('Title') }}" />
                     <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" placeholder="Enter the title" type="text" wire:model="title"/>
                     @error('title') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/4">
+                    <x-jet-label for="phone" value="{{ __('Start Date') }}" />
+
                     <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" placeholder="Enter the start date" type="date" wire:model="startDate"/>
                     @error('startDate') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
                 <div class="w-full px-2 md:w-1/4">
+                    <x-jet-label for="phone" value="{{ __('End Date') }}" />
+
                     <input class="w-full h-10 px-3 text-base placeholder-gray-600 border focus:shadow-outline" placeholder="Enter the end date" type="date" wire:model="endDate"/>
                     @error('endDate') <span class="text-red-700 block sm:inline font-bold ml-2 error">{{ $message }}</span>@enderror
                 </div>
-                <div class="w-full px-2 md:w-1/4">
-                    @if($updateMode)
+                <div class="w-full px-2 pt-4 md:w-1/4">
+                @if($updateMode)
                         <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-5/12"  wire:click.prevent="update()">update</button>
                         <button class="bg-transparent hover:bg-red-500 text-red-700 font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent w-5/12"  wire:click.prevent="cancelUpdate()">cancel</button>
                     @else
@@ -60,10 +65,26 @@
     <div>
         @if(sizeof($trainings))
         <div class="grid grid-rows-1 m-4">
-            <h3 class="text-center font-bold text-xl">{{__('Trainings List')}}</h3>
+            <h3 class="text-center font-bold text-xl">{{__('Trainings\'s List')}}</h3>
         </div>
         @endif
         <div>
+            <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0 m-2">
+                <div class="w-full px-2 md:w-1/4">
+                    <x-jet-label for="phone" value="{{ __('Title') }}" />
+
+                </div>
+                <div class="w-full px-2 md:w-1/4">
+                    <x-jet-label for="phone" value="{{ __('Start Date') }}" />
+
+                </div>
+                <div class="w-full px-2 md:w-1/4">
+                    <x-jet-label for="phone" value="{{ __('End Date') }}" />
+
+                </div>
+                <div class="w-full px-2 md:w-1/4">
+                </div>
+            </div>
             @foreach($trainings as $key => $value)
                 <div class="flex flex-wrap -mx-2 space-y-4 md:space-y-0 m-2">
                     <div class="w-full px-2 md:w-1/4">

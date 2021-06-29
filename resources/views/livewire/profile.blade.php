@@ -3,7 +3,7 @@
     <div>
         <div class="grid grid-rows-1 mb-4">
             <h3 class="font-bold text-xl float-left "> @if($updateMode) {{ __('Update')}} @endif
-                {{__('Profile Info')}}</h3>
+                {{__('My Profile Information')}}</h3>
         </div>
         <div class="grid grid-rows-1 m-2">
             <div class="flex flex-wrap -mx-1 space-y-1 md:space-y-0">
@@ -53,14 +53,14 @@
             <div class="flex flex-wrap -mx-2 space-y-2 md:space-y-0">
                 <div class="w-full px-2 md:w-1/2">
                     <!-- Name -->
-                    <x-jet-label for="name" value="{{ __('Name') }}" />
-                    <input id="name" type="text" class="mt-1 block w-full"   wire:model="name" autocomplete="name" />
+                    <x-jet-label for="name" value="{{ __('First Name') }}" />
+                    <input id="name" type="text" class="mt-1 block w-full"   wire:model="name" />
                     <input-error for="name" class="mt-2" />
                 </div>
                 <div class="w-full px-2 md:w-1/2">
                     <!-- Last Name -->
                     <x-jet-label for="lastName" value="{{ __('Last Name') }}" />
-                    <input id="lastName" type="text" class="mt-1 block w-full"   wire:model="lastName" autocomplete="lastName" />
+                    <input id="lastName" type="text" class="mt-1 block w-full"   wire:model="lastName"/>
                     <input-error for="lastName" class="mt-2" />
                 </div>
             </div>
@@ -69,14 +69,14 @@
             <div class="flex flex-wrap -mx-2 space-y-2 md:space-y-0">
                 <div class="w-full px-2 md:w-1/2">
                     <!-- dateOfBirth -->
-                    <x-jet-label for="dateOfBirth" value="{{ __('dateOfBirth') }}" />
-                    <input id="dateOfBirth" type="date" class="mt-1 block w-full"  wire:model="dateOfBirth" autocomplete="dateOfBirth" />
+                    <x-jet-label for="dateOfBirth" value="{{ __('Date Of Birth') }}" />
+                    <input id="dateOfBirth" type="date" class="mt-1 block w-full"  wire:model="dateOfBirth"  />
                     <input-error for="dateOfBirth" class="mt-2" />
                 </div>
                 <div class="w-full px-2 md:w-1/2">
                     <!-- phone -->
-                    <x-jet-label for="phone" value="{{ __('phone') }}" />
-                    <input id="phone" type="text" class="mt-1 block w-full"   wire:model="phone" autocomplete="phone" />
+                    <x-jet-label for="phone" value="{{ __('Phone') }}" />
+                    <input id="phone" type="text" class="mt-1 block w-full"   wire:model="phone" />
                     <input-error for="phone" class="mt-2" />
                 </div>
             </div>
@@ -93,9 +93,28 @@
                 <div class="w-full px-2 md:w-1/2">
                     <!-- Address -->
                     <x-jet-label for="Address" value="{{ __('Address') }}" />
-                    <input id="Address" type="text" class="mt-1 block w-full"   wire:model="address" autocomplete="Address" />
+                    <input id="Address" type="text" class="mt-1 block w-full"   wire:model="address" />
                     <input-error for="Address" class="mt-2" />
                     <!-- city country -->
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-rows-1 mt-4">
+            <div class="flex flex-wrap -mx-1 space-y-1 md:space-y-0">
+                <div class="w-full px-2 md:w-full">
+                    @if($updateMode)
+                        <button class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent w-2/12" wire:click.prevent="update()">
+                            {{ __('Save') }}
+                        </button>
+                        <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-2/12" wire:click.prevent="cancel()">
+                            {{ __('Cancel') }}
+                        </button>
+                    @else
+                        <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-3/12" wire:click.prevent="edit()">
+                            {{ __('Edit') }}
+                        </button>
+                    @endif
                 </div>
             </div>
         </div>
@@ -104,14 +123,14 @@
             <div class="flex flex-wrap -mx-2 space-y-2 md:space-y-0">
                 <div class="w-full px-2 md:w-1/2">
                     <!-- Name -->
-                    <x-jet-label for="name" value="{{ __('Name') }}" />
+                    <x-jet-label for="name" value="{{ __('First Name') }}" />
                     <input id="name" type="text" class="mt-1 block w-full"  readonly value="{{$user->name}}" />
                     <input-error for="name" class="mt-2" />
                 </div>
                 <div class="w-full px-2 md:w-1/2">
                     <!-- Last Name -->
                     <x-jet-label for="lastName" value="{{ __('Last Name') }}" />
-                    <input id="lastName" type="text" class="mt-1 block w-full"  readonly value="{{$user->lastName}}" autocomplete="lastName" />
+                    <input id="lastName" type="text" class="mt-1 block w-full"  readonly value="{{$user->lastName}}" />
                     <input-error for="lastName" class="mt-2" />
                 </div>
             </div>
@@ -120,14 +139,14 @@
             <div class="flex flex-wrap -mx-2 space-y-2 md:space-y-0">
                 <div class="w-full px-2 md:w-1/2">
                     <!-- dateOfBirth -->
-                    <x-jet-label for="dateOfBirth" value="{{ __('dateOfBirth') }}" />
-                    <input id="dateOfBirth" type="date" class="mt-1 block w-full"  readonly value="{{$intern->dateOfBirth}}" autocomplete="dateOfBirth" />
+                    <x-jet-label for="dateOfBirth" value="{{ __('Date Of Birth') }}" />
+                    <input id="dateOfBirth" type="date" class="mt-1 block w-full"  readonly value="{{$intern->dateOfBirth}}"/>
                     <input-error for="dateOfBirth" class="mt-2" />
                 </div>
                 <div class="w-full px-2 md:w-1/2">
                     <!-- phone -->
                     <x-jet-label for="phone" value="{{ __('phone') }}" />
-                    <input id="phone" type="text" class="mt-1 block w-full"  value="{{$intern->phone}}" autocomplete="phone" />
+                    <input id="phone" type="text" class="mt-1 block w-full"  value="{{$intern->phone}}" />
                     <input-error for="phone" class="mt-2" />
                 </div>
             </div>
@@ -144,9 +163,28 @@
                 <div class="w-full px-2 md:w-1/2">
                     <!-- Address -->
                     <x-jet-label for="Address" value="{{ __('Address') }}" />
-                    <input id="Address" type="text" class="mt-1 block w-full"  readonly value="{{$intern->address}}" autocomplete="Address" />
+                    <input id="Address" type="text" class="mt-1 block w-full"  readonly value="{{$intern->address}}" />
                     <input-error for="Address" class="mt-2" />
                     <!-- city country -->
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-rows-1 mt-4">
+            <div class="flex flex-wrap -mx-1 space-y-1 md:space-y-0">
+                <div class="w-full px-2 md:w-full">
+                    @if($updateMode)
+                        <button class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent w-2/12" wire:click.prevent="update()">
+                            {{ __('Save') }}
+                        </button>
+                        <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-2/12" wire:click.prevent="cancel()">
+                            {{ __('Cancel') }}
+                        </button>
+                    @else
+                        <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-3/12" wire:click.prevent="edit()">
+                            {{ __('Edit') }}
+                        </button>
+                    @endif
                 </div>
             </div>
         </div>
@@ -154,24 +192,6 @@
 
 
 
-    <div class="grid grid-rows-1 mt-4">
-        <div class="flex flex-wrap -mx-1 space-y-1 md:space-y-0">
-            <div class="w-full px-2 md:w-full">
-                @if($updateMode)
-                    <button class="bg-transparent hover:bg-green-500 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent w-2/12" wire:click.prevent="update()">
-                        {{ __('Save') }}
-                    </button>
-                    <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-2/12" wire:click.prevent="cancel()">
-                        {{ __('Cancel') }}
-                    </button>
-                @else
-                    <button class="bg-transparent hover:bg-yellow-500 text-yellow-700 font-semibold hover:text-white py-2 px-4 border border-yellow-500 hover:border-transparent w-3/12" wire:click.prevent="edit()">
-                        {{ __('Edit') }}
-                    </button>
-                @endif
-            </div>
-        </div>
-    </div>
 
 </div>
 <script>

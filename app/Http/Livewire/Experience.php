@@ -50,7 +50,7 @@ class Experience extends Component
                 'endDate' => $this->endDate,
             ]);
             $this->resetInputFields();
-            session()->flash('message', 'Training Has Been Created Successfully.');
+            session()->flash('message', 'Experience has been created successfully.');
         }catch (Exception $e){
             session()->flash('error', 'Something went wrong try later');
         }
@@ -87,7 +87,7 @@ class Experience extends Component
                 ]);
                 $this->resetInputFields();
                 $this->updateMode = false;
-                session()->flash('message', 'Contact Has Been Created Successfully.');
+                session()->flash('message', 'Experience  has been created successfully.');
             }
         }catch (\Exception $e){
             session()->flash('error', 'Something went wrong try later');
@@ -99,7 +99,7 @@ class Experience extends Component
         try{
             ExperienceModel::destroy($id);
             $this->render();
-            session()->flash('message', 'Contact Has Been deleted Successfully.');
+            session()->flash('message', 'Experience  has been deleted successfully.');
         }catch (\Exception $e){
             session()->flash('error', 'Something went wrong try later');
         }

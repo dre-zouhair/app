@@ -3,7 +3,6 @@
 namespace App\Http\Livewire;
 
 use App\Models\Intern;
-use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
@@ -15,26 +14,21 @@ use PHPUnit\Exception;
 
 class Profile extends Component implements UpdatesUserProfileInformation
 {
-    public $updateMode = false;
-    public $user,$intern, $name,$lastName,$email,$address,$phone,$dateOfBirth;
-    public $photo;
     use WithFileUploads;
+
+    public $updateMode = false, $user,$intern, $name,$lastName,$email,$address,$phone,$dateOfBirth;
+    public $photo;
 
     public function render()
     {
         $this->user = UserModel::find(Auth::user()->getAuthIdentifier());
         $this->intern = Intern::find($this->user->id);
-        $this->name = $this->user->name;
-        $this->email = $this->user->email;
-        $this->lastName = $this->user->lastName;
-        $this->address = $this->user->lastName;
-        $this->phone = $this->user->lastName;
-        $this->dateOfBirth = $this->intern->dateOfBirth;
         return view('livewire.profile');
     }
 
     public function update($user = null , array $input = null)
     {
+
         $user =UserModel::find( Auth::user()->getAuthIdentifier());
         $input = [
             'name' => $this->name,
@@ -71,22 +65,27 @@ class Profile extends Component implements UpdatesUserProfileInformation
                 'dateOfBirth' => $input['dateOfBirth'],
             ]);
             $this->updateMode = false;
-            session()->flash('message', 'Something went wrong try later');
+            $this->user = UserModel::find(Auth::user()->getAuthIdentifier());
+            $this->intern = Intern::find($this->user->id);
+            $this->updateInfo($this->user,$this->intern);
+
+            session()->flash('message', 'Profile info was successfully updated');
         }catch (Exception $e){
-            session()->flash('error', 'Something went wrong try later');
+
+            session()->flash('error', 'Something went wrong try later :(');
         }
     }
 
     public function edit(){
         $this->updateMode = true;
+       $this->updateInfo($this->user,$this->intern);
     }
 
     public function cancel(){
         $this->updateMode = false;
         $this->user = UserModel::find(Auth::user()->getAuthIdentifier());
-        $this->name = $this->user->name;
-        $this->email = $this->user->email;
-        $this->lastName = $this->user->lastName;
+        $this->intern = Intern::find($this->user->id);
+        $this->updateInfo($this->user,$this->intern);
     }
     public function deleteProfilePhoto(){
         try{
@@ -94,12 +93,19 @@ class Profile extends Component implements UpdatesUserProfileInformation
             $user->profile_photo_path = null;
             $user->save();
             $this->updateMode = false;
-            session()->flash('message', 'good dleted went wrong try later');
+            session()->flash('message', 'Profile Photo was deleted successfully');
         }catch (Exception $e){
             session()->flash('error', 'Something went wrong try later');
         }
 
-
+    }
+    private  function updateInfo($user,$intern){
+        $this->name = $user->name;
+        $this->email = $user->email;
+        $this->lastName = $user->lastName;
+        $this->address = $intern->address;
+        $this->phone = $intern->phone;
+        $this->dateOfBirth = $intern->dateOfBirth;
     }
 
 }
