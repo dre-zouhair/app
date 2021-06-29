@@ -30,15 +30,8 @@ class CreateNewUser implements CreatesNewUsers
                 'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
                 'password' => $this->passwordRules(),
             ])->validate();
-           $user = new User();
-           $user->user_type = "admin";
-           $user->name = $input['name'];
-           $user->lastName = $input['lastName'];
-           $user->email = $input['email'];
-           $user->password = Hash::make($input['password']);
-           $user->save();
 
-           $user2 =  User::create([
+           $user =  User::create([
                 'name' => $input['name'],
                 'lastName' => $input['lastName'],
                 'email' => $input['email'],
@@ -58,20 +51,13 @@ class CreateNewUser implements CreatesNewUsers
             ])->validate();
 
             try{
-                $user2 =  User::create([
+                $user =  User::create([
                     'name' => $input['name'],
                     'lastName' => $input['lastName'],
                     'email' => $input['email'],
                     'user_type' => "intern",
                     'password' => Hash::make($input['password']),
                 ]);
-                $user = new User();
-                $user->user_type = "intern";
-                $user->name = $input['name'];
-                $user->lastName = $input['lastName'];
-                $user->email = $input['email'];
-                $user->password = Hash::make($input['password']);
-                $user->save();
 
                 $intern = Intern::create([
                     'id' => $user->id,
@@ -81,7 +67,6 @@ class CreateNewUser implements CreatesNewUsers
                 ]);
                 return $user;
             }catch (\Exception $e){
-                dd($e);
                 session()->flash('error','something went wrong sorryyy');
                 return redirect()->back();
             }
