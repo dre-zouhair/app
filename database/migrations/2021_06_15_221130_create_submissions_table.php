@@ -16,7 +16,7 @@ class CreateSubmissionsTable extends Migration
         Schema::create('submissions', function (Blueprint $table) {
             $table->id();
             $table->string("desc");
-            $table->boolean("state")->default(false);
+            $table->integer("state")->default(0);
             $table->unsignedBigInteger("internship_id");
             $table->foreign('internship_id')->references('id')->on('internships');
             $table->unsignedBigInteger("intern_id");
