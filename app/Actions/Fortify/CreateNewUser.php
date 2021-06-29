@@ -66,6 +66,7 @@ class CreateNewUser implements CreatesNewUsers
                 ]);
                 return $user;
             }catch (\Exception $e){
+                dd($e);
                 session()->flash('error','something went wrong sorryyy');
                 return redirect()->back();
             }
