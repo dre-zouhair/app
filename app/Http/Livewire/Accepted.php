@@ -19,7 +19,7 @@ class Accepted extends Component
     {
         // load accepted submission
         // then return the Component ( a Component is a vue that is mapped to a Class)
-        $this->accepted = Intern::find(Auth::user()->getAuthIdentifier())->submissions()->getResults()->where('state','=',1)->get()->sortDesc();
+        $this->accepted = Intern::find(Auth::user()->getAuthIdentifier())->submissions()->getResults()->where('state','=',1)->sortDesc();
         return view('livewire.accepted');
     }
 }

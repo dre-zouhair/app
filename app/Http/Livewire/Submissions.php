@@ -12,7 +12,7 @@ class Submissions extends Component
 
     public function render()
     {
-        $this->submissions = Intern::find(Auth::user()->getAuthIdentifier())->submissions()->getResults()->where('state','=',0)->get()->sortDesc();
+        $this->submissions = Intern::find(Auth::user()->getAuthIdentifier())->submissions()->getResults()->where('state','=',0)->sortDesc();
         return view('livewire.submissions');
     }
 }
