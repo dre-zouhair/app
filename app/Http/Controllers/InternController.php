@@ -32,4 +32,11 @@ class InternController extends Controller
             'user' => $request->user(),
         ]);
     }
+
+    public function rejected(Request $request){
+        return view('intern.rejected', [
+            'request' => $request,
+            'user' => $request->user(),
+        ]);
+    }
 }

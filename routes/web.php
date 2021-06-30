@@ -33,6 +33,8 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
             ->name('submissions');
         Route::get('/user/profile/accepted', [\App\Http\Controllers\InternController::class, 'accepted'])
             ->name('acceptedSubmissions');
+        Route::get('/user/profile/rejected', [\App\Http\Controllers\InternController::class, 'rejected'])
+            ->name('rejectedSubmissions');
     });
 
     Route::middleware(['admin'])->group(function () {

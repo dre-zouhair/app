@@ -21,8 +21,12 @@ class Profile extends Component implements UpdatesUserProfileInformation
 
     public function render()
     {
+
         $this->user = UserModel::find(Auth::user()->getAuthIdentifier());
         $this->intern = Intern::find($this->user->id);
+       if($this->name != null and $this->name != "ad1"){
+           dd($this->name);
+       }
         return view('livewire.profile');
     }
 
@@ -62,7 +66,7 @@ class Profile extends Component implements UpdatesUserProfileInformation
             Intern::find($user->id)->update([
                 'address' => $input['address'],
                 'phone' => $input['phone'],
-                'dateOfBirth' => $input['dateOfBirth'],
+                'dateOfBirth' => $input['dateOfBirth']
             ]);
             $this->updateMode = false;
             $this->user = UserModel::find(Auth::user()->getAuthIdentifier());
@@ -71,14 +75,14 @@ class Profile extends Component implements UpdatesUserProfileInformation
 
             session()->flash('message', 'Profile info was successfully updated');
         }catch (Exception $e){
-
+            dd($e);
             session()->flash('error', 'Something went wrong try later :(');
         }
     }
 
     public function edit(){
         $this->updateMode = true;
-       $this->updateInfo($this->user,$this->intern);
+        $this->updateInfo($this->user,$this->intern);
     }
 
     public function cancel(){
