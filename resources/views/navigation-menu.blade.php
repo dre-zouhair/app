@@ -36,6 +36,13 @@
                             {{ __('accepted Submission') }}
                         </x-jet-nav-link>
                     </div>
+
+                        <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                            <x-jet-nav-link href="{{ route('rejectedSubmissions') }}" :active="request()->routeIs('rejectedSubmissions')">
+                                {{ __('rejected Submissions') }}
+                            </x-jet-nav-link>
+                        </div>
+
                   @endif
 
                 @if(Auth::user()->user_type == 'admin')
@@ -178,6 +185,10 @@
 
                       <x-jet-responsive-nav-link href="{{ route('acceptedSubmissions') }}" :active="request()->routeIs('acceptedSubmissions')">
                         {{ __('acceptedSubmissions') }}
+                    </x-jet-responsive-nav-link>
+
+                    <x-jet-responsive-nav-link href="{{ route('rejectedSubmissions') }}" :active="request()->routeIs('rejectedSubmissions')">
+                        {{ __('rejectedSubmissions') }}
                     </x-jet-responsive-nav-link>
 
                      <x-jet-responsive-nav-link href="{{ route('profile.info') }}" :active="request()->routeIs('profile.info')">
