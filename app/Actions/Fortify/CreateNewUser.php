@@ -17,12 +17,14 @@ class CreateNewUser implements CreatesNewUsers
     /**
      * Validate and create a newly registered user.
      *
-     * @param  array  $input
-     * @return \App\Models\User
+     * @param array $input
+     * @return User
+     * @throws \Illuminate\Validation\ValidationException
      */
-    public function create(array $input)
+    public function create(array $input):User
     {
 
+        // a hidden input is used in the register admin view to separate admin form intern
         if(array_key_exists('type' ,$input) && $input['type'] == 'admin' ){
             Validator::make($input, [
                 'name' => ['required', 'string', 'max:255'],
@@ -31,15 +33,12 @@ class CreateNewUser implements CreatesNewUsers
                 'password' => $this->passwordRules(),
             ])->validate();
 
-           $user =  User::create([
-                'name' => $input['name'],
-                'lastName' => $input['lastName'],
-                'email' => $input['email'],
-                'user_type' => "admin",
-                'password' => Hash::make($input['password']),
-            ]);
-            return $user;
+            return $this->createUser($input,"admin");
         }else{
+            // We use predefined validation rules for the user's input
+            // required is required :),
+            // 'unique:users' means that the value of the passed email must be unique in the users table
+            // $this->passwordRules() gets a customized rules for password validation, predefined in the packed I used to implement the auth system
             Validator::make($input, [
                 'name' => ['required', 'string', 'max:255'],
                 'lastName' => ['required', 'string', 'max:255'],
@@ -51,15 +50,10 @@ class CreateNewUser implements CreatesNewUsers
             ])->validate();
 
             try{
-                $user =  User::create([
-                    'name' => $input['name'],
-                    'lastName' => $input['lastName'],
-                    'email' => $input['email'],
-                    'user_type' => "intern",
-                    'password' => Hash::make($input['password']),
-                ]);
-
-                $intern = Intern::create([
+                //create a user
+                $user = $this->createUser($input,"intern");
+                // then create an intern for this user
+                Intern::create([
                     'id' => $user->id,
                     'phone' => $input['phone'],
                     'address' => $input['address'],
@@ -71,5 +65,22 @@ class CreateNewUser implements CreatesNewUsers
                 return redirect()->back();
             }
         }
+    }
+
+    /**
+     * Create a user via mass assignment
+     * @param array $input
+     * @param $userType
+     * @return mixed
+     */
+    private function createUser(array $input,$userType)
+    {
+        return User::create([
+            'name' => $input['name'],
+            'lastName' => $input['lastName'],
+            'email' => $input['email'],
+            'user_type' => $userType,
+            'password' => Hash::make($input['password']),
+        ]);
     }
 }

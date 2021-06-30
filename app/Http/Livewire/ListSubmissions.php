@@ -2,12 +2,9 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Field;
-use App\Models\Internship;
 use App\Models\Submission;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Validator;
 use Livewire\Component;
 
 class ListSubmissions extends Component
@@ -19,64 +16,42 @@ class ListSubmissions extends Component
     public function render()
     {
         try{
+            /**
+             * we retrieve the user's (enterprise) then its internships using the ORM
+             * \Carbon\Carbon::now() == Date::now
+             */
             $this->enterprise = User::find(Auth::user()->getAuthIdentifier())->enterprise()->getResults();
             $this->internshipsList = $this->enterprise->internships()->getResults()->where('expirationDate' ,'>', \Carbon\Carbon::now())->sortDesc();
             $submissions = [];
+            // for each internship we retrieve its submissions
+            // then merge into the submissions array
             foreach ($this->internshipsList as $value){
                 $submissions = array_merge($submissions,$value->submissions()->getResults()->where('state','=',0)->sortDesc()->toArray());
             }
+            /**
+             * the pagination logic:
+             * if paginate ( a boolean ) then we slice 5 elements form $submissions - from $index to $index +5
+             * else we slice 5 elements form $submissions - from 0 to 5
+             *
+             */
             $data = $this->paginate ? $this->submissions = array_slice($submissions, $this->index , 5) : array_slice($submissions, 0, 5);
+            // if we have any data we assignee it to submissions as it will be used in the view/Component
             if(sizeof($data)){
                 $this->submissions = $data;
             }
             return view('livewire.list-submissions');
         }catch (\Exception $e){
-            dd($e);
+            session()->flash('error', 'Something went wrong try later');
         }
 
     }
 
     public function paginate($sign){
+        //this function is triggered form the viw to increment or decrement the index and activate the pagination
         $this->index += $sign * 5;
         $this->paginate = true;
     }
 
-    public function createInternship(){
-
-        Validator::make([
-            'title' => $this->title,
-            'details' => $this->details,
-            'duration' => $this->duration,
-            'startDate' => $this->startDate,
-            'expirationDate' => $this->expirationDate,
-            'label' => $this->label,
-            'fullName' => $this->fullName
-        ],[
-            'title' => 'required',
-            'details' => 'required',
-            'duration' => 'required',
-            'startDate' => 'required',
-            'expirationDate' => 'required',
-            'label' => 'required',
-            'fullName' => 'required',
-        ])->validate();
-
-        $field = Field::create([
-            'label' => $this->label,
-            'fullName' => $this->fullName
-        ]);
-        Internship::create([
-            'title' => $this->title,
-            'details' => $this->details,
-            'duration' => $this->duration,
-            'startDate' => $this->startDate,
-            'expirationDate' => $this->expirationDate,
-            'enterprise_id' => $this->enterprise->id,
-            'field_id' => $field->id
-        ]);
-
-        $this->clearData();
-    }
     public function submission($id){
         try{
             $this->submission = Submission::find($id);
@@ -85,7 +60,7 @@ class ListSubmissions extends Component
             $this->lines = explode("\n", $this->submission->desc);
             $this->display = true;
         }catch (\Exception $e){
-
+            session()->flash('error', 'Something went wrong try later');
         }
 
     }

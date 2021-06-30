@@ -2,7 +2,8 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Submission;
+use App\Models\Intern;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
 class Submissions extends Component
@@ -11,7 +12,7 @@ class Submissions extends Component
 
     public function render()
     {
-        $this->submissions = Submission::where('state','=',false)->get()->sortDesc();
+        $this->submissions = Intern::find(Auth::user()->getAuthIdentifier())->submissions()->getResults()->where('state','=',0)->get()->sortDesc();
         return view('livewire.submissions');
     }
 }

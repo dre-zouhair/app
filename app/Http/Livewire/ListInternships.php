@@ -2,7 +2,6 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Enterprise;
 use App\Models\Field;
 use App\Models\Internship;
 use App\Models\Submission;
@@ -28,7 +27,7 @@ class ListInternships extends Component
             }
             return view('livewire.list-internships');
         }catch (\Exception $e){
-
+            session()->flash('error', 'Something went wrong try later');
         }
 
     }
@@ -48,7 +47,8 @@ class ListInternships extends Component
             'expirationDate' => $this->expirationDate,
             'label' => $this->label,
             'fullName' => $this->fullName
-        ],[
+        ],
+            [
             'title' => 'required',
             'details' => 'required',
             'duration' => 'required',
@@ -62,6 +62,7 @@ class ListInternships extends Component
             'label' => $this->label,
             'fullName' => $this->fullName
         ]);
+
        Internship::create([
            'title' => $this->title,
            'details' => $this->details,
@@ -81,13 +82,13 @@ class ListInternships extends Component
             $this->display = true;
             $this->update = false;
         }catch (\Exception $e){
-
+            session()->flash('error', 'Something went wrong try later');
         }
 
     }
 
     public function edit(){
-       $this->update = true;
+        $this->update = true;
         $this->title = $this->internship->title;
         $this->details = $this->internship->details;
         $this->duration = $this->internship->duration;
@@ -106,17 +107,16 @@ class ListInternships extends Component
             'expirationDate' => $this->expirationDate,
             'label' => $this->label,
             'fullName' => $this->fullName
-        ],[
-            'title' => 'required',
-            'details' => 'required',
-            'duration' => 'required',
-            'startDate' => 'required',
-            'expirationDate' => 'required',
-            'label' => 'required',
-            'fullName' => 'required',
-        ])->validate();
-
-
+             ],
+            [
+                    'title' => 'required',
+                    'details' => 'required',
+                    'duration' => 'required',
+                    'startDate' => 'required',
+                    'expirationDate' => 'required',
+                    'label' => 'required',
+                    'fullName' => 'required',
+            ])->validate();
 
         $field = Field::find($this->internship->field()->getResults()->id)->update([
             'label' => $this->label,
@@ -150,18 +150,15 @@ class ListInternships extends Component
     }
 
     public function save(){
-
         try{
             Submission::create([
                 'desc' => $this->desc,
                 'internship_id' => $this->internship->id,
                 'intern_id' => Auth::user()->getAuthIdentifier()
             ]);
-            $this->closeModal();
         }catch (\Exception $e){
-
+            session()->flash('error', 'Something went wrong try later');
         }
-
     }
 
     public function  close(){

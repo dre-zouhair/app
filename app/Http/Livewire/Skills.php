@@ -27,16 +27,17 @@ class Skills extends Component
             $this->skills = Intern::findOrFail(Auth::user()->getAuthIdentifier())->skills()->getResults();
         }catch (\Exception $e){
             $this->skills = [];
+            session()->flash('error', 'Something went wrong try later');
         }
         return view('livewire.skills');
     }
 
     public function store():void
     {
-        $validatedDate = $this->validate();
+        $this->validate();
         $label = $this->label;
         try{
-            $skill = SkillModel::create([
+            SkillModel::create([
                 'intern_id' => Auth::user()->getAuthIdentifier(),
                 'label' => $this->label,
             ]);
@@ -55,14 +56,11 @@ class Skills extends Component
         $this->label = $skill->label;
         $this->updateMode = true;
         $this->render();
-        $validatedDate = $this->validate([
-            'label' => 'alpha-num'
-        ]);
     }
 
     public function update()
     {
-        $validatedDate = $this->validate();
+        $this->validate();
         $label = $this->label;
         try {
             if ($this->selected_id) {
@@ -92,7 +90,7 @@ class Skills extends Component
 
     }
     public function cancelUpdate(){
-        $validatedDate = $this->validate(['title'=>'alpha-num']);
+        $this->validate(['title'=>'alpha-num']);
         $this->resetInputFields();
         $this->updateMode = false;
     }

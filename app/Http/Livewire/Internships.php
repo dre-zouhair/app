@@ -22,7 +22,7 @@ class Internships extends Component
             }
             return view('livewire.internships');
         }catch (\Exception $e){
-
+            session()->flash('error', 'Something went wrong try later');
         }
     }
 
@@ -38,6 +38,7 @@ class Internships extends Component
             $this->lines = explode("\n", $this->internship->details);
             $this->display = true;
         }catch (\Exception $e){
+            session()->flash('error', 'Something went wrong try later');
 
         }
 
@@ -57,6 +58,7 @@ class Internships extends Component
             ]);
             $this->closeModal();
         }catch (\Exception $e){
+            session()->flash('error', 'Something went wrong try later');
 
         }
 

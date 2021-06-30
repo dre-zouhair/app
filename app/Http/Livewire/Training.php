@@ -11,17 +11,20 @@ use PHPUnit\Exception;
 
 class Training extends Component
 {
+    // This array contains the validation rules for some inputs
     public  $rules = [
         'title' => 'required',
         'startDate' => 'required|greater_than_field',
         'endDate' => 'required',
     ];
+    // This array contains the error messages for each validation rule
     public  $messages = [
         'title.required' => 'title field is required',
         'startDate.required'  => 'start date field is required',
         'startDate.greater_than_field'  => 'start Date should be < end date',
         'endDate.required' => 'end date field is required',
     ];
+    //This vars/attributes are the state of the component, i.e they store the data of the component
     public $trainings = [],$selected_id, $title,$startDate,$endDate;
     public $updateMode = false;
 
@@ -39,14 +42,21 @@ class Training extends Component
 
     public function store():void
     {
-        $validatedDate = $this->validate();
+        // this methode is used to store a Training
+        // it will be executed when triggered from the component
+        // we validate the input
+
+        $this->validate();
+
         try{
-            $training = TrainingModel::create([
+            // create a training
+            TrainingModel::create([
                 'intern_id' => Auth::user()->getAuthIdentifier(),
                 'title' => $this->title,
                 'startDate' => $this->startDate,
                 'endDate' => $this->endDate,
             ]);
+            //reset the inputs to initial values (No wan wants to see their form's data after clicking submit
             $this->resetInputFields();
             session()->flash('message', 'Training Has Been Created Successfully.');
         }catch (Exception $e){
@@ -57,6 +67,8 @@ class Training extends Component
     }
     public function edit($id){
 
+        // when we want to edit a Training we first fill the fields with data the old data
+        // we set updateMode to true as this variable is used in the view to display the edit form or not
         $training = TrainingModel::findOrFail($id);
         $this->selected_id = $id;
         $this->title = $training->title;
@@ -64,24 +76,27 @@ class Training extends Component
         $this->endDate = $training->endDate;
         $this->updateMode = true;
         $this->render();
-        $validatedDate = $this->validate([
-            'title' => 'alpha-num'
-        ]);
     }
 
     public function update()
     {
+        // we validated the data
         $validatedDate = $this->validate();
 
         try {
+            // check if we have a selected id to be updated
             if ($this->selected_id) {
+                // grab the respective Training for the id
                 $training = TrainingModel::all()->find($this->selected_id);
+                // update the training  using the fields that are mapped in the view
                 $training->update([
                     'title' => $this->title,
                     'startDate' => $this->startDate,
                     'endDate' => $this->endDate,
                 ]);
+                // reset the form (same thing as always )
                 $this->resetInputFields();
+                // updateMode to false to hide the edit form
                 $this->updateMode = false;
                 session()->flash('message', 'Training Has Been Updated Successfully.');
             }
@@ -92,6 +107,7 @@ class Training extends Component
     }
 
     public function delete($id){
+        // this one is obvious
         try{
             TrainingModel::destroy($id);
             $this->render();
@@ -102,10 +118,15 @@ class Training extends Component
 
     }
     public function cancelUpdate(){
+        // to cancel update ( mapped to the cancel button in the edit form )
         $validatedDate = $this->validate(['title'=>'alpha-num']);
         $this->resetInputFields();
         $this->updateMode = false;
     }
+
+    /**
+     * reset the fields wich are used for create and update
+     */
     private function resetInputFields(){
         $this->title = '';
         $this->startDate = '';
